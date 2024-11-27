@@ -1,4 +1,4 @@
-# Few-Shot and Continual Learning for Fake Image detection
+# Few-Shot and Continual Learning for Fake Image detection - paper
 ## Notes
 In the FSL survey, could be useful to check papers [6], [7], [8]. They explain the taxonomy for FSL under different problem perspectives.
 
@@ -147,15 +147,16 @@ The survey analized, classify FSL approaches based on the level of abstraction(a
 
 
 
-
 # Work To Do
 
 
 1. Write the presentation, **it goes up to point 4.1**
 2. Define the task: **Deepfake detection in images**
    1. Improve the generalization of real v. fake detectors (FSL)
-   2. Avoid catastrophic forgetting phenomena.
-3. Find a dataset: **See table 3 for some possible datasets**
+   2. Avoid catastrophic forgetting phenomena. (Memory expansion? Prompt Learning <-> FSL)
+3. Find a dataset: 
+  - **CDDB** --> [dataset](https://drive.google.com/file/d/1NgB8ytBMFBFwyXJQvdVT_yek1EaaEHrg/view?usp=sharing)
+  - **See table 3 for some possible datasets**
 4. Define a method, or a series of methods:
    1. Choose the architectures(ResNet50, GAN, CLIP, ViT...)
    2. Test these architectures on the dataset
@@ -169,7 +170,26 @@ The survey analized, classify FSL approaches based on the level of abstraction(a
 
 ## Fake Image detection - SOTA 
 
-## Continual for DeepFake (tbd)
+## Continual for DeepFake - paper (Sofia & Emanuele)
+**Main concepts:**
+  - **Dataset:** They create the CDDB dataset, a more challenging dataset for evaluating DeepFake detection
+  
+  "*From the new collection, a large number of differently- ordered sequences of tasks can be produced to study CDD. In our benchmark, we suggest three different evaluation scenarios: (1) an easy task sequence (EASY), (2) a hard task se- quence (HARD), (3) and a long task sequence (LONG).*"
+  **EASY, HARD and LONG variants of CDDB**
+
+  - **Methods:** They (1)tried and (2)adapt differents SOTA methods for CDD and compare them in Table 3:
+    - **Baseline**
+    - **Binary-class (BC) learning**
+    - **Multi-class (MC) learning**
+    - **Multi-task (MT) learning**
+    - **Joint Training**
+
+  - **Benchmarking(see Table 3):** 
+
+  *"... The CNN-based methods are mostly outperformed by the ViT-based methods (ConViT and DyTox)..."*, but definetly more manageable in terms of parameters number
+
+  **TO DO, analysis of Table 3 to see where CNN are (largely)outperformed by ViTs and where are similar**
+
 
 ## Catastrophic Forgetting in FID (tbd)
 
