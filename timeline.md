@@ -171,7 +171,7 @@ The survey analized, classify FSL approaches based on the level of abstraction(a
 ## Fake Image detection - SOTA 
 
 ## Continual for DeepFake - paper (Sofia & Emanuele)
-**Main concepts:**
+### Main concepts
   - **Dataset:** They create the CDDB dataset, a more challenging dataset for evaluating DeepFake detection
   
   "*From the new collection, a large number of differently- ordered sequences of tasks can be produced to study CDD. In our benchmark, we suggest three different evaluation scenarios: (1) an easy task sequence (EASY), (2) a hard task se- quence (HARD), (3) and a long task sequence (LONG).*"
@@ -190,7 +190,14 @@ The survey analized, classify FSL approaches based on the level of abstraction(a
 
   **TO DO, analysis of Table 3 to see where CNN are (largely)outperformed by ViTs and where are similar**
 
-
+### Architectures for CDD
+- **CNNDet**
+- **ConViT** 
+- **NSCIL** AA: mAP: (no)
+- **LRCIL** AA: 89.33 mAP: 94.84
+- **iCaRL** AA: 90.43 mAP: 95.27
+- **LUCIR** AA: 92.00 mAP: 95.94
+- **DyTox** AA: 96.54 mAP: 94.23
 ## Catastrophic Forgetting in FID (tbd)
 
 --- 
