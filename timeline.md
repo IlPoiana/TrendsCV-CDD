@@ -194,7 +194,32 @@ The survey analized, classify FSL approaches based on the level of abstraction(a
 - **CNNDet**
 - **ConViT** 
 - **NSCIL** AA: mAP: (no)
-- **LRCIL** AA: 89.33 mAP: 94.84
+- **LRCIL** AA: 89.33 mAP: 94.84 
+  *"In this paper we introduce an original technique named “Latent Replay” where, **instead of storing a portion of past data in the input space, we store activations volumes at some intermediate layer.**"*
+
+  **Two parts of a Latent Replay approach:**
+    - **Lower part:** is the part of the net architecture near to the input, **where the "slow learning" happens**.
+    - **Replay Layers:** *"we store the activations volumes at a given layer (denoted as **Latent Replay layer**)."* 
+    **Explainations:** *"When latent replay is implemented with mini-batch SGD training:  **in the forward step**, a concatenation is performed at the replay layer (on the mini- batch dimension) to join patterns coming from the input layer with activations coming from the external storage; **the backward step** is stopped just before the replay layer for the replay patterns."*
+    - **Higher part:** is the part of the net near the output, where there is a higher representation of the data, **here the learning happens at full pace** 
+  
+  So this approach ehnance the pseudo-learnin approach to reduce the Catastrophic Forgetting phenomena but with the special "Replay Layer".
+
+  #### Pseudo-Reharsal - Overview
+  
+  1. **Training on Initial Task:**
+      - The model is trained on the first task using real data.
+      - After training, the model captures the learned knowledge (e.g., distributions of data) in its parameters or in a separate generative model.
+
+  2. **Generating Pseudo-Samples:**
+      - When a new task arrives, a generative model (e.g., a Variational Autoencoder (VAE), GAN, or simply a frozen snapshot of the network)
+      - produces synthetic samples that resemble the data from previous tasks.
+
+  3. **Replaying Pseudo-Samples:**
+      During training on the new task, the model is provided with both:
+        - Pseudo-samples (representing old tasks).
+        - Real samples from the current task.
+
 - **iCaRL** AA: 90.43 mAP: 95.27
 - **LUCIR** AA: 92.00 mAP: 95.94
 - **DyTox** AA: 96.54 mAP: 94.23
