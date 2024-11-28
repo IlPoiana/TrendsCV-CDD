@@ -198,8 +198,19 @@ The survey analized, classify FSL approaches based on the level of abstraction(a
 - **iCaRL** AA: 90.43 mAP: 95.27
 - **LUCIR** AA: 92.00 mAP: 95.94
 - **DyTox** AA: 96.54 mAP: 94.23
-## Catastrophic Forgetting in FID (tbd)
 
---- 
+### iCaRL: CNN
+each batch is a class, it saves the significant examples and creates a prototype vector of the class’s features by making average
+to avoid catastrophic forgetting usa prototype rehearsal (in the training reproposes prototypes of old classes) e knowledge distillation
 
-## ResNet50 (Sofia)
+### LUCIR: CNN
+uses three combined loss functions: 
+- classification loss (cross-entropy + cosinus normalization in the last layer)
+- loss of less-forget (the features of new classes are encouraged to maintain a representation similar to those of existing classes, in order to present the configuration of the embedding space)
+- loss of margin ranking (well separated classes, especially between new and old)
+After each step of incremental training, you can fine-tune with a set of samples from all classes to optimize the model
+
+### DyTox: transformer
+at the beginning a task token is created 
+the encoder creates a token for each image and the decoder is passed this token along with the related task token
+for each training cycle creates a new task token maintaining the previous ones
