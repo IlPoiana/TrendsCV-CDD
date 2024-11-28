@@ -51,11 +51,19 @@
 2. **Avoiding Catastrophic forgetting - Reharsal for CIL:**
    1. **Pseudo:** [6]
    2. **Native:** [7]
-   3. **Generative:** CNN-GAN [8]
+   3. **Generative:** CNN-GAN [9]
 3. **Prompt2Guard:** 
    - Multimodal, CLIP
    - Prompt Tuning/Learning
 4. **Our ideas:**
+   - It is clear that there is a discrepancy between the detection on Diffusion Model and GAN or other methods generated images. We foresee some prominent ideas like:
+        1. Integrating a dataset, like the CDDB with synthetic generated data from diffiusion
+        2. In a unimodal setting: trying to use a *Generative Reharsal* approach with a mixture of GAN and Diffusion generated models.(prendi i labels delle reali per generare i diffusion)
+        3. Taking the *Prompt2Guard*[4] model, but integrate:
+           1. Test it's performance on a diff. generated dataset: "*...As future work, we plan to ex- tend our method beyond the use of a closed label set, harnessing the power of vocabulary-free classification, and to evaluate it on images coming from more recent generators, e.g. **including diffusion-based deepfakes.***"
+           2. Defroze the image encoder and text encoder with a CIL oriented feature extractor, like LUCIR[8] but really slow training
+        4. Using FSL to improve already existing models when posed in front to Diff. gen images(using a smaller model due respect to CLIP and possibly achieving better results)
+            - We have a dataset of synth generated images, use those in an Episodic Training Fashion (MAML) to enhance the model generalization capability in a Meta-Learning fashion
 
 ## Papers Reference
 [1] (CIL)*A Continual Deepfake Detection Benchmark: Dataset, Methods, and Essentials*
@@ -72,4 +80,6 @@
 
 [7] (CIL)*Latent Replay for Real-Time Continual Learning* - Lorenzo Pellegrini, Gabriele Graffieti, Vincenzo Lomonaco, Davide Maltoni
 
-[8] (CIL)*GAN-CNN Ensemble: A Robust Deepfake Detection Model of Social Media Images Using Minimized Catastrophic Forgetting and Generative Replay Technique* - Preeti Sharma, Manoj Kumar, Hitesh Kumar Sharma
+[8] (CIL)*Learning a Uniﬁed Classiﬁer Incrementally via Rebalancing* - Saihui Hou, Xinyu Pan, Chen Change Loy, Zilei Wang, Dahua Lin
+
+[9] (CIL)*GAN-CNN Ensemble: A Robust Deepfake Detection Model of Social Media Images Using Minimized Catastrophic Forgetting and Generative Replay Technique* - Preeti Sharma, Manoj Kumar, Hitesh Kumar Sharma
