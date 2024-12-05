@@ -146,30 +146,6 @@ The survey analized, classify FSL approaches based on the level of abstraction(a
 3. **Model-Based Methods** provide enhanced information retention and data augmentation capabilities, beneficial for improving model robustness and performance.
 
 
-
-# Work To Do
-
-
-1. Write the presentation, **it goes up to point 4.1**
-2. Define the task: **Deepfake detection in images**
-   1. Improve the generalization of real v. fake detectors (FSL)
-   2. Avoid catastrophic forgetting phenomena. (Memory expansion? Prompt Learning <-> FSL)
-3. Find a dataset: 
-  - **CDDB** --> [dataset](https://drive.google.com/file/d/1NgB8ytBMFBFwyXJQvdVT_yek1EaaEHrg/view?usp=sharing)
-  - **See table 3 for some possible datasets**
-4. Define a method, or a series of methods:
-   1. Choose the architectures(ResNet50, GAN, CLIP, ViT...)
-   2. Test these architectures on the dataset
-   3. Try implement some upgrades with the seen techniques(FSL...)
-   4. Compare the results
-5. Write the report
-
-
-
-## Continual Learning - SOTA techniques (Sofia & Emanuele)
-
-## Fake Image detection - SOTA 
-
 ## Continual for DeepFake - paper (Sofia & Emanuele)
 ### Main concepts
   - **Dataset:** They create the CDDB dataset, a more challenging dataset for evaluating DeepFake detection
