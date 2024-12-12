@@ -32,6 +32,11 @@ sudo reboot
    5. Spostalo sulla home ```sudo mv /home/disi/TrendsCV-CDD/CDDBdataset/ /home/disi/```
    6. cambia la visibilità della directory per poterci accedere ```sudo chmod -R +rwx CDDB```
 
+## Usare P2G
+
+- **Cambiare il backbone per il training:** Prompt2Guard/src/models/clip/prompt_learner.py - Riga 71 `backbonename = 'ViT-16'`
+  Tra uno dei possibili definiti in _MODELS: {"RN50" non và, "RN101", "RN50x4", "RN50x16" non và, "ViT-B/32", "ViT-B/16 non riesce a scaricarlo"}
+
 ## Useful Links
 
 **Microsoft guide to Azure SSH:** https://learn.microsoft.com/it-it/azure/lab-services/connect-virtual-machine#connect-to-a-linux-lab-vm-using-ssh
