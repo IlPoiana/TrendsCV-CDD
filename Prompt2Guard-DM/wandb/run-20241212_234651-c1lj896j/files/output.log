@@ -1,0 +1,48 @@
+2024-12-12 23:46:52,070 [trainer.py] => All params: 149647617
+2024-12-12 23:46:52,071 [trainer.py] => Trainable params: 149647617
+2024-12-12 23:46:52,071 [prompt2guard.py] => Learning on 0-2
+2024-12-12 23:46:52,425 [prompt2guard.py] => Parameters to be updated: {'prompt_learner.0.img_prompt', 'prompt_learner.0.text_prompt'}
+
+Task 0, Epoch 1/2 => Loss 0.820, Train_accy 43.46, Test_accy 52.22:  50%|██████████████████████████████▌                              | 1/2 [00:16<00:16, 16.66s/it]
+
+Task 0, Epoch 2/2 => Loss 0.624, Train_accy 64.23, Test_accy 58.89: 100%|█████████████████████████████████████████████████████████████| 2/2 [00:32<00:00, 16.27s/it]
+2024-12-12 23:47:29,609 [trainer.py] => Performance Task 0 for top1: {'total': 58.89, '00-01': 58.89, 'old': 0, 'new': 58.89}
+2024-12-12 23:47:29,610 [trainer.py] => Performance Task 0 for mean: {'total': 58.89, '00-01': 58.89, 'old': 0, 'new': 58.89}
+2024-12-12 23:47:29,611 [trainer.py] => Performance Task 0 for mix_top_mean: {'total': 58.89, '00-01': 58.89, 'old': 0, 'new': 58.89}
+2024-12-12 23:47:29,782 [trainer.py] => All params: 149647617
+2024-12-12 23:47:29,783 [trainer.py] => Trainable params: 8960
+2024-12-12 23:47:29,784 [prompt2guard.py] => Learning on 2-4
+  0%|                                                                                                                                         | 0/2 [00:00<?, ?it/s]
+2024-12-12 23:47:29,856 [prompt2guard.py] => Parameters to be updated: {'prompt_learner.1.text_prompt', 'prompt_learner.1.img_prompt'}
+Traceback (most recent call last):
+  File "/home/disi/Prompt2Guard/src/train.py", line 91, in <module>
+    main()
+  File "/home/disi/Prompt2Guard/src/train.py", line 12, in main
+    train(param)
+  File "/home/disi/Prompt2Guard/src/trainer.py", line 55, in train
+    model.incremental_train(data_manager)
+  File "/home/disi/Prompt2Guard/src/methods/prompt2guard.py", line 126, in incremental_train
+    self._train(self.train_loader, self.test_loader)
+  File "/home/disi/Prompt2Guard/src/methods/prompt2guard.py", line 176, in _train
+    self.train_function(train_loader, test_loader, optimizer, scheduler)
+  File "/home/disi/Prompt2Guard/src/methods/prompt2guard.py", line 183, in train_function
+    for i, (object_name, inputs, targets) in enumerate(train_loader):
+  File "/home/disi/trendsenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 630, in __next__
+    data = self._next_data()
+  File "/home/disi/trendsenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 1345, in _next_data
+    return self._process_data(data)
+  File "/home/disi/trendsenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 1371, in _process_data
+    data.reraise()
+  File "/home/disi/trendsenv/lib/python3.9/site-packages/torch/_utils.py", line 694, in reraise
+    raise exception
+KeyError: Caught KeyError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/home/disi/trendsenv/lib/python3.9/site-packages/torch/utils/data/_utils/worker.py", line 308, in _worker_loop
+    data = fetcher.fetch(index)
+  File "/home/disi/trendsenv/lib/python3.9/site-packages/torch/utils/data/_utils/fetch.py", line 51, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/disi/trendsenv/lib/python3.9/site-packages/torch/utils/data/_utils/fetch.py", line 51, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/disi/Prompt2Guard/src/utils/data_manager.py", line 227, in __getitem__
+    classes = self.classes[img_path.replace(self.dataset_path, "")][: self.topk_classes]
+KeyError: 'latent-diffusion_noise2image_LSUNchurches/train/1_fake/latent-diffusion_noise2img-lsunchurches256_sample_000180.png'

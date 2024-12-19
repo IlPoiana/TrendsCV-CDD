@@ -1,0 +1,4 @@
+2024-12-13 01:30:22,847 [trainer.py] => All params: 149629697
+2024-12-13 01:30:22,848 [trainer.py] => Trainable params: 149629697
+2024-12-13 01:30:22,848 [prompt2guard.py] => Learning on 0-2
+2024-12-13 01:30:23,228 [prompt2guard.py] => Parameters to be updated: {'prompt_learner.0.text_prompt', 'prompt_learner.0.img_prompt'}

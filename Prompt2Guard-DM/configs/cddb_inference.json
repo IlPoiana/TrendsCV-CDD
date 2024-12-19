@@ -1,0 +1,11 @@
+{   
+    "batch_size_eval" : 32,
+    "dataset": "cddb",
+    "data_path": "/home/disi/CDDBdataset/CDDB/",
+    "softmax" : false,
+    "prototype" : "fake", 
+    "scenario" : ["cddb_hard"],
+    "upperbound" : false,
+    "random_select" : false,
+    "precision" : "fp16"
+}

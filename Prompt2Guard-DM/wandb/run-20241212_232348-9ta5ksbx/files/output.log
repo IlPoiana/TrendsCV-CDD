@@ -1,0 +1,31 @@
+> /home/disi/Prompt2Guard/src/trainer.py(53)train()
+-> for task in range(nb_tasks):
+2024-12-12 23:23:51,583 [trainer.py] => All params: 149629697
+2024-12-12 23:23:51,584 [trainer.py] => Trainable params: 149629697
+2024-12-12 23:23:51,585 [prompt2guard.py] => Learning on 0-2
+2024-12-12 23:23:51,960 [prompt2guard.py] => Parameters to be updated: {'prompt_learner.0.text_prompt', 'prompt_learner.0.img_prompt'}
+
+
+
+
+
+
+
+Task 0, Epoch 7/8 => Loss 0.304, Train_accy 94.23, Test_accy 73.33:  88%|█████████████████████████████████████████████████████▍       | 7/8 [02:14<00:18, 18.18s/it]
+
+Task 0, Epoch 8/8 => Loss 0.280, Train_accy 95.38, Test_accy 71.11: 100%|█████████████████████████████████████████████████████████████| 8/8 [02:30<00:00, 18.79s/it]
+2024-12-12 23:26:27,149 [trainer.py] => Performance Task 0 for top1: {'total': 71.11, '00-01': 71.11, 'old': 0, 'new': 71.11}
+2024-12-12 23:26:27,149 [trainer.py] => Performance Task 0 for mean: {'total': 71.11, '00-01': 71.11, 'old': 0, 'new': 71.11}
+2024-12-12 23:26:27,149 [trainer.py] => Performance Task 0 for mix_top_mean: {'total': 71.11, '00-01': 71.11, 'old': 0, 'new': 71.11}
+Traceback (most recent call last):
+  File "/home/disi/Prompt2Guard/src/train.py", line 91, in <module>
+    main()
+  File "/home/disi/Prompt2Guard/src/train.py", line 12, in main
+    train(param)
+  File "/home/disi/Prompt2Guard/src/trainer.py", line 53, in train
+    for task in range(nb_tasks):
+  File "/home/disi/Prompt2Guard/src/trainer.py", line 81, in compute_forgetting
+    forgetting = _compute_AF(acc_matrix[k])
+  File "/home/disi/Prompt2Guard/src/trainer.py", line 75, in _compute_AF
+    af = total_bwt / (N - 1)  # Calculate the average of all BWT_i
+ZeroDivisionError: division by zero

@@ -1,0 +1,68 @@
+2024-12-12 22:08:24,494 [trainer.py] => All params: 149647617
+2024-12-12 22:08:24,495 [trainer.py] => Trainable params: 149647617
+2024-12-12 22:08:24,496 [prompt2guard.py] => Learning on 0-2
+2024-12-12 22:08:24,865 [prompt2guard.py] => Parameters to be updated: {'prompt_learner.0.text_prompt', 'prompt_learner.0.img_prompt'}
+
+
+
+
+
+
+
+Task 0, Epoch 7/8 => Loss 0.236, Train_accy 98.83, Test_accy 98.75:  88%|████████████████████████████████████████████████████▌       | 7/8 [14:32<02:01, 121.87s/it]
+
+Task 0, Epoch 8/8 => Loss 0.230, Train_accy 99.38, Test_accy 99.62: 100%|████████████████████████████████████████████████████████████| 8/8 [16:33<00:00, 124.17s/it]
+2024-12-12 22:25:28,002 [trainer.py] => Performance Task 0 for top1: {'total': 99.62, '00-01': 99.62, 'old': 0, 'new': 99.62}
+2024-12-12 22:25:28,003 [trainer.py] => Performance Task 0 for mean: {'total': 99.62, '00-01': 99.62, 'old': 0, 'new': 99.62}
+2024-12-12 22:25:28,003 [trainer.py] => Performance Task 0 for mix_top_mean: {'total': 99.62, '00-01': 99.62, 'old': 0, 'new': 99.62}
+2024-12-12 22:25:28,065 [trainer.py] => All params: 149647617
+2024-12-12 22:25:28,066 [trainer.py] => Trainable params: 8960
+2024-12-12 22:25:28,066 [prompt2guard.py] => Learning on 2-4
+2024-12-12 22:25:28,135 [prompt2guard.py] => Parameters to be updated: {'prompt_learner.1.text_prompt', 'prompt_learner.1.img_prompt'}
+
+
+
+
+
+
+
+Task 1, Epoch 7/8 => Loss 0.339, Train_accy 92.75, Test_accy 79.25:  88%|████████████████████████████████████████████████████▌       | 7/8 [12:04<01:46, 106.06s/it]
+
+Task 1, Epoch 8/8 => Loss 0.328, Train_accy 93.58, Test_accy 80.75: 100%|████████████████████████████████████████████████████████████| 8/8 [13:51<00:00, 103.99s/it]
+2024-12-12 22:39:57,791 [trainer.py] => Performance Task 1 for top1: {'total': 97.17, '00-01': 99.12, '02-03': 93.25, 'old': 99.12, 'new': 93.25}
+2024-12-12 22:39:57,791 [trainer.py] => Performance Task 1 for mean: {'total': 97.42, '00-01': 99.62, '02-03': 93.0, 'old': 99.62, 'new': 93.0}
+2024-12-12 22:39:57,792 [trainer.py] => Performance Task 1 for mix_top_mean: {'total': 97.17, '00-01': 99.5, '02-03': 92.5, 'old': 99.5, 'new': 92.5}
+2024-12-12 22:39:57,867 [trainer.py] => All params: 149647617
+2024-12-12 22:39:57,868 [trainer.py] => Trainable params: 8960
+2024-12-12 22:39:57,868 [prompt2guard.py] => Learning on 4-6
+2024-12-12 22:39:57,936 [prompt2guard.py] => Parameters to be updated: {'prompt_learner.2.text_prompt', 'prompt_learner.2.img_prompt'}
+
+
+
+
+
+
+
+
+Task 2, Epoch 8/8 => Loss 0.259, Train_accy 98.46, Test_accy 53.95: 100%|█████████████████████████████████████████████████████████████| 8/8 [05:26<00:00, 40.85s/it]
+2024-12-12 22:45:24,758 [prompt2guard.py] => Task 2, Epoch 8/8 => Loss 0.259, Train_accy 98.46, Test_accy 53.95
+2024-12-12 22:45:55,080 [trainer.py] => Performance Task 2 for top1: {'total': 92.64, '00-01': 94.38, '02-03': 93.25, '04-05': 74.44, 'old': 94.0, 'new': 74.44}
+2024-12-12 22:45:55,081 [trainer.py] => Performance Task 2 for mean: {'total': 93.72, '00-01': 98.12, '02-03': 91.75, '04-05': 63.33, 'old': 96.0, 'new': 63.33}
+2024-12-12 22:45:55,081 [trainer.py] => Performance Task 2 for mix_top_mean: {'total': 93.41, '00-01': 96.12, '02-03': 93.0, '04-05': 71.11, 'old': 95.08, 'new': 71.11}
+2024-12-12 22:45:55,226 [trainer.py] => All params: 149647617
+2024-12-12 22:45:55,227 [trainer.py] => Trainable params: 8960
+2024-12-12 22:45:55,227 [prompt2guard.py] => Learning on 6-8
+Traceback (most recent call last):
+  File "/home/disi/Prompt2Guard/src/train.py", line 91, in <module>
+    main()
+  File "/home/disi/Prompt2Guard/src/train.py", line 12, in main
+    train(param)
+  File "/home/disi/Prompt2Guard/src/trainer.py", line 55, in train
+    model.incremental_train(data_manager)
+  File "/home/disi/Prompt2Guard/src/methods/prompt2guard.py", line 110, in incremental_train
+    self.train_loader = DataLoader(
+  File "/home/disi/trendsenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 349, in __init__
+    sampler = RandomSampler(dataset, generator=generator)  # type: ignore[arg-type]
+  File "/home/disi/trendsenv/lib/python3.9/site-packages/torch/utils/data/sampler.py", line 140, in __init__
+    raise ValueError(f"num_samples should be a positive integer value, but got num_samples={self.num_samples}")
+ValueError: num_samples should be a positive integer value, but got num_samples=0

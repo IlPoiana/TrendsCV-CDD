@@ -1,0 +1,37 @@
+2024-12-13 02:07:47,276 [trainer.py] => All params: 149638657
+2024-12-13 02:07:47,277 [trainer.py] => Trainable params: 149638657
+2024-12-13 02:07:47,277 [prompt2guard.py] => Learning on 0-2
+2024-12-13 02:07:47,660 [prompt2guard.py] => Parameters to be updated: {'prompt_learner.0.img_prompt', 'prompt_learner.0.text_prompt'}
+  0%|                                                                                                                                         | 0/1 [00:01<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/disi/Prompt2Guard/src/train.py", line 91, in <module>
+    main()
+  File "/home/disi/Prompt2Guard/src/train.py", line 12, in main
+    train(param)
+  File "/home/disi/Prompt2Guard/src/trainer.py", line 55, in train
+    model.incremental_train(data_manager)
+  File "/home/disi/Prompt2Guard/src/methods/prompt2guard.py", line 126, in incremental_train
+    self._train(self.train_loader, self.test_loader)
+  File "/home/disi/Prompt2Guard/src/methods/prompt2guard.py", line 159, in _train
+    self.train_function(train_loader, test_loader, optimizer, scheduler)
+  File "/home/disi/Prompt2Guard/src/methods/prompt2guard.py", line 183, in train_function
+    for i, (object_name, inputs, targets) in enumerate(train_loader):
+  File "/home/disi/trendsenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 630, in __next__
+    data = self._next_data()
+  File "/home/disi/trendsenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 1325, in _next_data
+    return self._process_data(data)
+  File "/home/disi/trendsenv/lib/python3.9/site-packages/torch/utils/data/dataloader.py", line 1371, in _process_data
+    data.reraise()
+  File "/home/disi/trendsenv/lib/python3.9/site-packages/torch/_utils.py", line 694, in reraise
+    raise exception
+KeyError: Caught KeyError in DataLoader worker process 3.
+Original Traceback (most recent call last):
+  File "/home/disi/trendsenv/lib/python3.9/site-packages/torch/utils/data/_utils/worker.py", line 308, in _worker_loop
+    data = fetcher.fetch(index)
+  File "/home/disi/trendsenv/lib/python3.9/site-packages/torch/utils/data/_utils/fetch.py", line 51, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/disi/trendsenv/lib/python3.9/site-packages/torch/utils/data/_utils/fetch.py", line 51, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/disi/Prompt2Guard/src/utils/data_manager.py", line 227, in __getitem__
+    classes = self.classes[img_path.replace(self.dataset_path, "")][: self.topk_classes]
+KeyError: 'guided-diffusion_noise2image_LSUNbedrooms/train/0_real/00567.png'

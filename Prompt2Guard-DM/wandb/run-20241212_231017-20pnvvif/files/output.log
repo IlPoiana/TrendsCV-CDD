@@ -1,0 +1,21 @@
+> /home/disi/Prompt2Guard/src/trainer.py(51)train()
+-> for task in range(data_manager.nb_tasks):
+*** AttributeError: 'DataManager' object has no attribute 'nb_task'
+5
+<utils.data_manager.DataManager object at 0x7f2ab753eeb0>
+['__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_class_order', '_common_trsf', '_increments', '_object_classes_data', '_select', '_setup_data', '_test_data', '_test_targets', '_test_trsf', '_train_data', '_train_targets', '_train_trsf', 'args', 'dataset_name', 'get_anchor_dataset', 'get_dataset', 'get_dataset_with_split', 'get_task_size', 'nb_tasks', 'use_path']
+args = {'batch_size': 2, 'batch_size_eval': 32, 'epochs': 8, 'warmup_epoch': 1, 'init_lr': 0.01, 'lrate': 0.01, 'label_smoothing': 0.1, 'topk_classes': 5, 'K': 7, 'enable_prev_prompt': False, 'ensembling': [False, False, True, False], 'precision': 'fp16', 'dataset': 'cddb', 'task_name': ['biggan', 'whichfaceisreal', 'san'], 'data_path': '/home/disi/CDDBdataset/CDDB/', 'multiclass': [0, 0, 0], 'class_order': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], 'memory_size': 0, 'memory_per_class': 0, 'fixed_memory': True, 'shuffle': False, 'init_cls': 2, 'increment': 2, 'embd_dim': 768, 'torch_seed': 2, 'seed': [1993], 'EPSILON': 1e-08, 'init_milestones': [20, 30, 40], 'init_lr_decay': 0.1, 'init_weight_decay': 0.0005, 'milestones': [20, 30], 'lrate_decay': 0.1, 'weight_decay': 0.0002, 'num_workers': 6, 'config': './configs/cddb_training.json', 'wandb': True, 'run_name': 'testToTrash', 'device': device(type='cuda'), 'filename': 'logs/testToTrash/2024-12-12-23:10:12/task'}
+Traceback (most recent call last):
+  File "/home/disi/Prompt2Guard/src/train.py", line 91, in <module>
+    main()
+  File "/home/disi/Prompt2Guard/src/train.py", line 12, in main
+    train(param)
+  File "/home/disi/Prompt2Guard/src/trainer.py", line 51, in train
+    label_history = []
+  File "/home/disi/Prompt2Guard/src/trainer.py", line 51, in train
+    label_history = []
+  File "/usr/lib/python3.9/bdb.py", line 88, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib/python3.9/bdb.py", line 113, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit

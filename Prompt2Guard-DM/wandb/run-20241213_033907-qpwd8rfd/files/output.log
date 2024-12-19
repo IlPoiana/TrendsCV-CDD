@@ -1,0 +1,73 @@
+2024-12-13 03:39:07,842 [trainer.py] => All params: 149665537
+2024-12-13 03:39:07,843 [trainer.py] => Trainable params: 149665537
+2024-12-13 03:39:07,844 [prompt2guard.py] => Learning on 0-2
+2024-12-13 03:39:08,209 [prompt2guard.py] => Parameters to be updated: {'prompt_learner.0.img_prompt', 'prompt_learner.0.text_prompt'}
+
+
+
+
+Task 0, Epoch 4/5 => Loss 0.274, Train_accy 95.24, Test_accy 90.80:  80%|████████████████████████████████████████████████▊            | 4/5 [01:10<00:17, 17.63s/it]
+
+Task 0, Epoch 5/5 => Loss 0.277, Train_accy 95.24, Test_accy 90.80: 100%|█████████████████████████████████████████████████████████████| 5/5 [01:28<00:00, 17.66s/it]
+2024-12-13 03:40:41,047 [trainer.py] => Performance Task 0 for top1: {'total': 90.8, '00-01': 90.8, 'old': 0, 'new': 90.8}
+2024-12-13 03:40:41,047 [trainer.py] => Performance Task 0 for mean: {'total': 90.8, '00-01': 90.8, 'old': 0, 'new': 90.8}
+2024-12-13 03:40:41,048 [trainer.py] => Performance Task 0 for mix_top_mean: {'total': 90.8, '00-01': 90.8, 'old': 0, 'new': 90.8}
+2024-12-13 03:40:41,258 [trainer.py] => All params: 149665537
+2024-12-13 03:40:41,259 [trainer.py] => Trainable params: 8960
+2024-12-13 03:40:41,259 [prompt2guard.py] => Learning on 2-4
+2024-12-13 03:40:41,329 [prompt2guard.py] => Parameters to be updated: {'prompt_learner.1.text_prompt', 'prompt_learner.1.img_prompt'}
+
+
+
+
+Task 1, Epoch 4/5 => Loss 0.292, Train_accy 94.86, Test_accy 91.56:  80%|████████████████████████████████████████████████▊            | 4/5 [00:56<00:14, 14.12s/it]
+
+Task 1, Epoch 5/5 => Loss 0.289, Train_accy 94.86, Test_accy 91.56: 100%|█████████████████████████████████████████████████████████████| 5/5 [01:10<00:00, 14.18s/it]
+2024-12-13 03:41:56,544 [trainer.py] => Performance Task 1 for top1: {'total': 90.91, '00-01': 90.8, '02-03': 91.04, 'old': 90.8, 'new': 91.04}
+2024-12-13 03:41:56,544 [trainer.py] => Performance Task 1 for mean: {'total': 90.91, '00-01': 90.8, '02-03': 91.04, 'old': 90.8, 'new': 91.04}
+2024-12-13 03:41:56,544 [trainer.py] => Performance Task 1 for mix_top_mean: {'total': 90.91, '00-01': 90.8, '02-03': 91.04, 'old': 90.8, 'new': 91.04}
+2024-12-13 03:41:56,645 [trainer.py] => All params: 149665537
+2024-12-13 03:41:56,646 [trainer.py] => Trainable params: 8960
+2024-12-13 03:41:56,646 [prompt2guard.py] => Learning on 4-6
+2024-12-13 03:41:56,719 [prompt2guard.py] => Parameters to be updated: {'prompt_learner.2.text_prompt', 'prompt_learner.2.img_prompt'}
+
+
+
+
+Task 2, Epoch 4/5 => Loss 0.213, Train_accy 100.00, Test_accy 94.64:  80%|████████████████████████████████████████████████            | 4/5 [01:30<00:22, 22.67s/it]
+
+Task 2, Epoch 5/5 => Loss 0.211, Train_accy 100.00, Test_accy 94.64: 100%|████████████████████████████████████████████████████████████| 5/5 [01:53<00:00, 22.68s/it]
+2024-12-13 03:43:56,941 [trainer.py] => Performance Task 2 for top1: {'total': 91.95, '00-01': 90.8, '02-03': 91.04, '04-05': 93.46, 'old': 90.91, 'new': 93.46}
+2024-12-13 03:43:56,941 [trainer.py] => Performance Task 2 for mean: {'total': 91.95, '00-01': 90.8, '02-03': 91.04, '04-05': 93.46, 'old': 90.91, 'new': 93.46}
+2024-12-13 03:43:56,942 [trainer.py] => Performance Task 2 for mix_top_mean: {'total': 91.95, '00-01': 90.8, '02-03': 91.04, '04-05': 93.46, 'old': 90.91, 'new': 93.46}
+2024-12-13 03:43:57,066 [trainer.py] => All params: 149665537
+2024-12-13 03:43:57,067 [trainer.py] => Trainable params: 8960
+2024-12-13 03:43:57,068 [prompt2guard.py] => Learning on 6-8
+2024-12-13 03:43:57,136 [prompt2guard.py] => Parameters to be updated: {'prompt_learner.3.text_prompt', 'prompt_learner.3.img_prompt'}
+
+
+
+
+Task 3, Epoch 4/5 => Loss 0.322, Train_accy 93.85, Test_accy 65.24:  80%|████████████████████████████████████████████████▊            | 4/5 [01:15<00:18, 18.85s/it]
+
+Task 3, Epoch 5/5 => Loss 0.281, Train_accy 95.38, Test_accy 61.54: 100%|█████████████████████████████████████████████████████████████| 5/5 [01:34<00:00, 18.83s/it]
+2024-12-13 03:45:38,715 [trainer.py] => Performance Task 3 for top1: {'total': 85.19, '00-01': 90.8, '02-03': 91.04, '04-05': 93.46, '06-07': 65.56, 'old': 91.95, 'new': 65.56}
+2024-12-13 03:45:38,715 [trainer.py] => Performance Task 3 for mean: {'total': 84.9, '00-01': 90.8, '02-03': 91.04, '04-05': 93.46, '06-07': 64.44, 'old': 91.95, 'new': 64.44}
+2024-12-13 03:45:38,715 [trainer.py] => Performance Task 3 for mix_top_mean: {'total': 86.04, '00-01': 90.8, '02-03': 91.04, '04-05': 93.46, '06-07': 68.89, 'old': 91.95, 'new': 68.89}
+2024-12-13 03:45:38,832 [trainer.py] => All params: 149665537
+2024-12-13 03:45:38,833 [trainer.py] => Trainable params: 8960
+2024-12-13 03:45:38,833 [prompt2guard.py] => Learning on 8-10
+2024-12-13 03:45:38,908 [prompt2guard.py] => Parameters to be updated: {'prompt_learner.4.text_prompt', 'prompt_learner.4.img_prompt'}
+
+
+
+
+Task 4, Epoch 4/5 => Loss 0.591, Train_accy 70.84, Test_accy 66.98:  80%|████████████████████████████████████████████████            | 4/5 [21:26<05:20, 320.19s/it]
+
+Task 4, Epoch 5/5 => Loss 0.557, Train_accy 74.86, Test_accy 67.15: 100%|████████████████████████████████████████████████████████████| 5/5 [26:41<00:00, 320.29s/it]
+2024-12-13 04:13:43,641 [trainer.py] => Performance Task 4 for top1: {'total': 76.22, '00-01': 90.8, '02-03': 91.04, '04-05': 97.2, '06-07': 63.33, '08-09': 74.6, 'old': 85.75, 'new': 74.6}
+2024-12-13 04:13:43,641 [trainer.py] => Performance Task 4 for mean: {'total': 74.23, '00-01': 90.8, '02-03': 91.04, '04-05': 97.2, '06-07': 64.44, '08-09': 72.22, 'old': 86.04, 'new': 72.22}
+2024-12-13 04:13:43,641 [trainer.py] => Performance Task 4 for mix_top_mean: {'total': 76.18, '00-01': 90.8, '02-03': 91.04, '04-05': 97.2, '06-07': 66.67, '08-09': 74.41, 'old': 86.61, 'new': 74.41}
+2024-12-13 04:13:43,747 [trainer.py] => Avg Forgetting of top1: -0.0900
+2024-12-13 04:13:43,748 [trainer.py] => Avg Forgetting of mean: 0.4675
+2024-12-13 04:13:43,748 [trainer.py] => Avg Forgetting of mix_top_mean: -0.0875

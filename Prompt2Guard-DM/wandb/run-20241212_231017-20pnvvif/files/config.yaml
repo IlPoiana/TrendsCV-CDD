@@ -1,0 +1,187 @@
+wandb_version: 1
+
+batch_size:
+  desc: null
+  value: 2
+batch_size_eval:
+  desc: null
+  value: 32
+epochs:
+  desc: null
+  value: 8
+warmup_epoch:
+  desc: null
+  value: 1
+init_lr:
+  desc: null
+  value: 0.01
+lrate:
+  desc: null
+  value: 0.01
+label_smoothing:
+  desc: null
+  value: 0.1
+topk_classes:
+  desc: null
+  value: 5
+K:
+  desc: null
+  value: 7
+enable_prev_prompt:
+  desc: null
+  value: false
+ensembling:
+  desc: null
+  value:
+  - false
+  - false
+  - true
+  - false
+precision:
+  desc: null
+  value: fp16
+dataset:
+  desc: null
+  value: cddb
+task_name:
+  desc: null
+  value:
+  - biggan
+  - whichfaceisreal
+  - san
+data_path:
+  desc: null
+  value: /home/disi/CDDBdataset/CDDB/
+multiclass:
+  desc: null
+  value:
+  - 0
+  - 0
+  - 0
+class_order:
+  desc: null
+  value:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+memory_size:
+  desc: null
+  value: 0
+memory_per_class:
+  desc: null
+  value: 0
+fixed_memory:
+  desc: null
+  value: true
+shuffle:
+  desc: null
+  value: false
+init_cls:
+  desc: null
+  value: 2
+increment:
+  desc: null
+  value: 2
+embd_dim:
+  desc: null
+  value: 768
+torch_seed:
+  desc: null
+  value: 2
+seed:
+  desc: null
+  value:
+  - 1993
+EPSILON:
+  desc: null
+  value: 1.0e-08
+init_milestones:
+  desc: null
+  value:
+  - 20
+  - 30
+  - 40
+init_lr_decay:
+  desc: null
+  value: 0.1
+init_weight_decay:
+  desc: null
+  value: 0.0005
+milestones:
+  desc: null
+  value:
+  - 20
+  - 30
+lrate_decay:
+  desc: null
+  value: 0.1
+weight_decay:
+  desc: null
+  value: 0.0002
+num_workers:
+  desc: null
+  value: 6
+config:
+  desc: null
+  value: ./configs/cddb_training.json
+wandb:
+  desc: null
+  value: true
+run_name:
+  desc: null
+  value: testToTrash
+device:
+  desc: null
+  value: cuda
+filename:
+  desc: null
+  value: logs/testToTrash/2024-12-12-23:10:12/task
+_wandb:
+  desc: null
+  value:
+    python_version: 3.9.5
+    cli_version: 0.16.0
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1734045017.454444
+    t:
+      1:
+      - 1
+      - 5
+      - 41
+      - 53
+      - 55
+      2:
+      - 1
+      - 5
+      - 41
+      - 53
+      - 55
+      3:
+      - 7
+      - 13
+      - 16
+      - 23
+      4: 3.9.5
+      5: 0.16.0
+      8:
+      - 5
+      13: linux-x86_64
+    m:
+    - 1: epoch
+      6:
+      - 3
+    - 1: task
+      6:
+      - 3
+    - 1: condition
+      6:
+      - 3

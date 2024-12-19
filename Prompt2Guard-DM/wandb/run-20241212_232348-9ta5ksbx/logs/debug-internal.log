@@ -1,0 +1,322 @@
+2024-12-12 23:23:48,871 INFO    StreamThr :49154 [internal.py:wandb_internal():86] W&B internal server running at pid: 49154, started at: 2024-12-12 23:23:48.870385
+2024-12-12 23:23:48,873 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: status
+2024-12-12 23:23:48,875 INFO    WriterThread:49154 [datastore.py:open_for_write():85] open: /home/disi/Prompt2Guard/wandb/run-20241212_232348-9ta5ksbx/run-9ta5ksbx.wandb
+2024-12-12 23:23:48,875 DEBUG   SenderThread:49154 [sender.py:send():380] send: header
+2024-12-12 23:23:48,906 DEBUG   SenderThread:49154 [sender.py:send():380] send: run
+2024-12-12 23:23:49,257 INFO    SenderThread:49154 [dir_watcher.py:__init__():211] watching files in: /home/disi/Prompt2Guard/wandb/run-20241212_232348-9ta5ksbx/files
+2024-12-12 23:23:49,257 INFO    SenderThread:49154 [sender.py:_start_run_threads():1124] run started: 9ta5ksbx with start time 1734045828.870588
+2024-12-12 23:23:49,269 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: check_version
+2024-12-12 23:23:49,269 DEBUG   SenderThread:49154 [sender.py:send_request():407] send_request: check_version
+2024-12-12 23:23:49,335 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: run_start
+2024-12-12 23:23:49,344 DEBUG   HandlerThread:49154 [system_info.py:__init__():32] System info init
+2024-12-12 23:23:49,344 DEBUG   HandlerThread:49154 [system_info.py:__init__():47] System info init done
+2024-12-12 23:23:49,344 INFO    HandlerThread:49154 [system_monitor.py:start():194] Starting system monitor
+2024-12-12 23:23:49,344 INFO    SystemMonitor:49154 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-12-12 23:23:49,344 INFO    HandlerThread:49154 [system_monitor.py:probe():214] Collecting system info
+2024-12-12 23:23:49,345 INFO    SystemMonitor:49154 [interfaces.py:start():190] Started cpu monitoring
+2024-12-12 23:23:49,345 INFO    SystemMonitor:49154 [interfaces.py:start():190] Started disk monitoring
+2024-12-12 23:23:49,346 INFO    SystemMonitor:49154 [interfaces.py:start():190] Started gpu monitoring
+2024-12-12 23:23:49,347 INFO    SystemMonitor:49154 [interfaces.py:start():190] Started memory monitoring
+2024-12-12 23:23:49,348 INFO    SystemMonitor:49154 [interfaces.py:start():190] Started network monitoring
+2024-12-12 23:23:49,354 DEBUG   HandlerThread:49154 [system_info.py:probe():196] Probing system
+2024-12-12 23:23:49,359 DEBUG   HandlerThread:49154 [system_info.py:_probe_git():181] Probing git
+2024-12-12 23:23:49,370 DEBUG   HandlerThread:49154 [system_info.py:_probe_git():189] Probing git done
+2024-12-12 23:23:49,370 DEBUG   HandlerThread:49154 [system_info.py:probe():244] Probing system done
+2024-12-12 23:23:49,370 DEBUG   HandlerThread:49154 [system_monitor.py:probe():223] {'os': 'Linux-5.15.0-1075-azure-x86_64-with-glibc2.31', 'python': '3.9.5', 'heartbeatAt': '2024-12-12T23:23:49.354266', 'startedAt': '2024-12-12T23:23:48.865645', 'docker': None, 'cuda': None, 'args': ('--wandb',), 'state': 'running', 'program': '/home/disi/Prompt2Guard/src/train.py', 'codePathLocal': 'src/train.py', 'codePath': 'src/train.py', 'git': {'remote': 'https://github.com/laitifranz/Prompt2Guard.git', 'commit': 'a89890203294d4f18051a3052b3a57f2e8d28d80'}, 'email': None, 'root': '/home/disi/Prompt2Guard', 'host': 'lab20WH1G', 'username': 'disi', 'executable': '/home/disi/trendsenv/bin/python3', 'cpu_count': 6, 'cpu_count_logical': 6, 'cpu_freq': {'current': 2593.993, 'min': 0.0, 'max': 0.0}, 'cpu_freq_per_core': [{'current': 2593.993, 'min': 0.0, 'max': 0.0}, {'current': 2593.993, 'min': 0.0, 'max': 0.0}, {'current': 2593.993, 'min': 0.0, 'max': 0.0}, {'current': 2593.993, 'min': 0.0, 'max': 0.0}, {'current': 2593.993, 'min': 0.0, 'max': 0.0}, {'current': 2593.993, 'min': 0.0, 'max': 0.0}], 'disk': {'/': {'total': 123.86906433105469, 'used': 56.58524703979492}}, 'gpu': 'Tesla V100-PCIE-16GB', 'gpu_count': 1, 'gpu_devices': [{'name': 'Tesla V100-PCIE-16GB', 'memory_total': 17179869184}], 'memory': {'total': 110.04586029052734}}
+2024-12-12 23:23:49,370 INFO    HandlerThread:49154 [system_monitor.py:probe():224] Finished collecting system info
+2024-12-12 23:23:49,370 INFO    HandlerThread:49154 [system_monitor.py:probe():227] Publishing system info
+2024-12-12 23:23:49,370 DEBUG   HandlerThread:49154 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2024-12-12 23:23:49,370 DEBUG   HandlerThread:49154 [system_info.py:_save_pip():68] Saving pip packages done
+2024-12-12 23:23:49,371 INFO    HandlerThread:49154 [system_monitor.py:probe():229] Finished publishing system info
+2024-12-12 23:23:49,373 DEBUG   SenderThread:49154 [sender.py:send():380] send: files
+2024-12-12 23:23:49,374 INFO    SenderThread:49154 [sender.py:_save_file():1380] saving file wandb-metadata.json with policy now
+2024-12-12 23:23:49,379 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: stop_status
+2024-12-12 23:23:49,379 DEBUG   SenderThread:49154 [sender.py:send_request():407] send_request: stop_status
+2024-12-12 23:23:49,419 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: internal_messages
+2024-12-12 23:23:49,615 DEBUG   SenderThread:49154 [sender.py:send():380] send: telemetry
+2024-12-12 23:23:49,616 DEBUG   SenderThread:49154 [sender.py:send():380] send: metric
+2024-12-12 23:23:49,616 DEBUG   SenderThread:49154 [sender.py:send():380] send: telemetry
+2024-12-12 23:23:49,616 DEBUG   SenderThread:49154 [sender.py:send():380] send: metric
+2024-12-12 23:23:49,616 DEBUG   SenderThread:49154 [sender.py:send():380] send: metric
+2024-12-12 23:23:49,616 DEBUG   SenderThread:49154 [sender.py:send():380] send: metric
+2024-12-12 23:23:49,616 WARNING SenderThread:49154 [sender.py:send_metric():1331] Seen metric with glob (shouldn't happen)
+2024-12-12 23:23:49,616 DEBUG   SenderThread:49154 [sender.py:send():380] send: metric
+2024-12-12 23:23:49,616 WARNING SenderThread:49154 [sender.py:send_metric():1331] Seen metric with glob (shouldn't happen)
+2024-12-12 23:23:49,616 DEBUG   SenderThread:49154 [sender.py:send():380] send: metric
+2024-12-12 23:23:49,617 WARNING SenderThread:49154 [sender.py:send_metric():1331] Seen metric with glob (shouldn't happen)
+2024-12-12 23:23:49,822 INFO    wandb-upload_0:49154 [upload_job.py:push():131] Uploaded file /tmp/tmp_i9wgl6pwandb/1cingl9v-wandb-metadata.json
+2024-12-12 23:23:50,259 INFO    Thread-12 :49154 [dir_watcher.py:_on_file_created():271] file/dir created: /home/disi/Prompt2Guard/wandb/run-20241212_232348-9ta5ksbx/files/wandb-metadata.json
+2024-12-12 23:23:50,259 INFO    Thread-12 :49154 [dir_watcher.py:_on_file_created():271] file/dir created: /home/disi/Prompt2Guard/wandb/run-20241212_232348-9ta5ksbx/files/requirements.txt
+2024-12-12 23:23:50,259 INFO    Thread-12 :49154 [dir_watcher.py:_on_file_created():271] file/dir created: /home/disi/Prompt2Guard/wandb/run-20241212_232348-9ta5ksbx/files/output.log
+2024-12-12 23:23:52,258 INFO    Thread-12 :49154 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/disi/Prompt2Guard/wandb/run-20241212_232348-9ta5ksbx/files/output.log
+2024-12-12 23:23:53,963 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: status_report
+2024-12-12 23:23:54,259 INFO    Thread-12 :49154 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/disi/Prompt2Guard/wandb/run-20241212_232348-9ta5ksbx/files/output.log
+2024-12-12 23:23:58,964 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: status_report
+2024-12-12 23:24:03,965 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: status_report
+2024-12-12 23:24:04,380 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: stop_status
+2024-12-12 23:24:04,380 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: internal_messages
+2024-12-12 23:24:04,381 DEBUG   SenderThread:49154 [sender.py:send_request():407] send_request: stop_status
+2024-12-12 23:24:08,383 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: partial_history
+2024-12-12 23:24:08,385 DEBUG   SenderThread:49154 [sender.py:send():380] send: metric
+2024-12-12 23:24:08,386 DEBUG   SenderThread:49154 [sender.py:send():380] send: metric
+2024-12-12 23:24:08,386 DEBUG   SenderThread:49154 [sender.py:send():380] send: metric
+2024-12-12 23:24:08,386 DEBUG   SenderThread:49154 [sender.py:send():380] send: history
+2024-12-12 23:24:08,386 DEBUG   SenderThread:49154 [sender.py:send_request():407] send_request: summary_record
+2024-12-12 23:24:08,388 INFO    SenderThread:49154 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2024-12-12 23:24:09,264 INFO    Thread-12 :49154 [dir_watcher.py:_on_file_created():271] file/dir created: /home/disi/Prompt2Guard/wandb/run-20241212_232348-9ta5ksbx/files/wandb-summary.json
+2024-12-12 23:24:09,389 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: status_report
+2024-12-12 23:24:10,264 INFO    Thread-12 :49154 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/disi/Prompt2Guard/wandb/run-20241212_232348-9ta5ksbx/files/output.log
+2024-12-12 23:24:14,390 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: status_report
+2024-12-12 23:24:19,380 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: stop_status
+2024-12-12 23:24:19,381 DEBUG   SenderThread:49154 [sender.py:send_request():407] send_request: stop_status
+2024-12-12 23:24:19,383 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: internal_messages
+2024-12-12 23:24:19,538 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: status_report
+2024-12-12 23:24:20,267 INFO    Thread-12 :49154 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/disi/Prompt2Guard/wandb/run-20241212_232348-9ta5ksbx/files/config.yaml
+2024-12-12 23:24:24,243 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: partial_history
+2024-12-12 23:24:24,244 DEBUG   SenderThread:49154 [sender.py:send():380] send: history
+2024-12-12 23:24:24,244 DEBUG   SenderThread:49154 [sender.py:send_request():407] send_request: summary_record
+2024-12-12 23:24:24,247 INFO    SenderThread:49154 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2024-12-12 23:24:24,268 INFO    Thread-12 :49154 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/disi/Prompt2Guard/wandb/run-20241212_232348-9ta5ksbx/files/wandb-summary.json
+2024-12-12 23:24:25,247 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: status_report
+2024-12-12 23:24:26,269 INFO    Thread-12 :49154 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/disi/Prompt2Guard/wandb/run-20241212_232348-9ta5ksbx/files/output.log
+2024-12-12 23:24:30,248 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: status_report
+2024-12-12 23:24:34,381 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: stop_status
+2024-12-12 23:24:34,382 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: internal_messages
+2024-12-12 23:24:34,382 DEBUG   SenderThread:49154 [sender.py:send_request():407] send_request: stop_status
+2024-12-12 23:24:35,611 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: status_report
+2024-12-12 23:24:40,617 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: status_report
+2024-12-12 23:24:45,621 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: status_report
+2024-12-12 23:24:49,351 DEBUG   SystemMonitor:49154 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-12-12 23:24:49,384 DEBUG   SenderThread:49154 [sender.py:send():380] send: stats
+2024-12-12 23:24:49,443 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: internal_messages
+2024-12-12 23:24:49,447 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: stop_status
+2024-12-12 23:24:49,470 DEBUG   SenderThread:49154 [sender.py:send_request():407] send_request: stop_status
+2024-12-12 23:24:50,712 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: status_report
+2024-12-12 23:24:55,718 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: status_report
+2024-12-12 23:24:59,923 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: partial_history
+2024-12-12 23:24:59,924 DEBUG   SenderThread:49154 [sender.py:send():380] send: history
+2024-12-12 23:24:59,924 DEBUG   SenderThread:49154 [sender.py:send_request():407] send_request: summary_record
+2024-12-12 23:24:59,927 INFO    SenderThread:49154 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2024-12-12 23:25:00,366 INFO    Thread-12 :49154 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/disi/Prompt2Guard/wandb/run-20241212_232348-9ta5ksbx/files/wandb-summary.json
+2024-12-12 23:25:00,366 INFO    Thread-12 :49154 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/disi/Prompt2Guard/wandb/run-20241212_232348-9ta5ksbx/files/output.log
+2024-12-12 23:25:00,927 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: status_report
+2024-12-12 23:25:04,381 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: stop_status
+2024-12-12 23:25:04,382 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: internal_messages
+2024-12-12 23:25:04,382 DEBUG   SenderThread:49154 [sender.py:send_request():407] send_request: stop_status
+2024-12-12 23:25:06,539 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: status_report
+2024-12-12 23:25:11,540 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: status_report
+2024-12-12 23:25:15,759 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: partial_history
+2024-12-12 23:25:15,760 DEBUG   SenderThread:49154 [sender.py:send():380] send: history
+2024-12-12 23:25:15,760 DEBUG   SenderThread:49154 [sender.py:send_request():407] send_request: summary_record
+2024-12-12 23:25:15,761 INFO    SenderThread:49154 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2024-12-12 23:25:16,371 INFO    Thread-12 :49154 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/disi/Prompt2Guard/wandb/run-20241212_232348-9ta5ksbx/files/wandb-summary.json
+2024-12-12 23:25:16,371 INFO    Thread-12 :49154 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/disi/Prompt2Guard/wandb/run-20241212_232348-9ta5ksbx/files/output.log
+2024-12-12 23:25:16,762 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: status_report
+2024-12-12 23:25:19,381 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: stop_status
+2024-12-12 23:25:19,381 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: internal_messages
+2024-12-12 23:25:19,382 DEBUG   SenderThread:49154 [sender.py:send():380] send: stats
+2024-12-12 23:25:19,382 DEBUG   SenderThread:49154 [sender.py:send_request():407] send_request: stop_status
+2024-12-12 23:25:22,558 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: status_report
+2024-12-12 23:25:27,559 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: status_report
+2024-12-12 23:25:31,527 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: partial_history
+2024-12-12 23:25:31,528 DEBUG   SenderThread:49154 [sender.py:send():380] send: history
+2024-12-12 23:25:31,528 DEBUG   SenderThread:49154 [sender.py:send_request():407] send_request: summary_record
+2024-12-12 23:25:31,529 INFO    SenderThread:49154 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2024-12-12 23:25:32,378 INFO    Thread-12 :49154 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/disi/Prompt2Guard/wandb/run-20241212_232348-9ta5ksbx/files/wandb-summary.json
+2024-12-12 23:25:32,380 INFO    Thread-12 :49154 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/disi/Prompt2Guard/wandb/run-20241212_232348-9ta5ksbx/files/output.log
+2024-12-12 23:25:33,532 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: status_report
+2024-12-12 23:25:34,422 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: internal_messages
+2024-12-12 23:25:34,423 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: stop_status
+2024-12-12 23:25:34,426 DEBUG   SenderThread:49154 [sender.py:send_request():407] send_request: stop_status
+2024-12-12 23:25:38,598 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: status_report
+2024-12-12 23:25:43,598 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: status_report
+2024-12-12 23:25:48,599 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: status_report
+2024-12-12 23:25:49,382 DEBUG   SenderThread:49154 [sender.py:send():380] send: stats
+2024-12-12 23:25:49,382 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: stop_status
+2024-12-12 23:25:49,383 DEBUG   SenderThread:49154 [sender.py:send_request():407] send_request: stop_status
+2024-12-12 23:25:49,423 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: internal_messages
+2024-12-12 23:25:50,743 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: partial_history
+2024-12-12 23:25:50,744 DEBUG   SenderThread:49154 [sender.py:send():380] send: history
+2024-12-12 23:25:50,744 DEBUG   SenderThread:49154 [sender.py:send_request():407] send_request: summary_record
+2024-12-12 23:25:50,745 INFO    SenderThread:49154 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2024-12-12 23:25:51,388 INFO    Thread-12 :49154 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/disi/Prompt2Guard/wandb/run-20241212_232348-9ta5ksbx/files/wandb-summary.json
+2024-12-12 23:25:52,388 INFO    Thread-12 :49154 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/disi/Prompt2Guard/wandb/run-20241212_232348-9ta5ksbx/files/output.log
+2024-12-12 23:25:53,746 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: status_report
+2024-12-12 23:25:58,747 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: status_report
+2024-12-12 23:26:03,747 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: status_report
+2024-12-12 23:26:04,383 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: stop_status
+2024-12-12 23:26:04,383 DEBUG   SenderThread:49154 [sender.py:send_request():407] send_request: stop_status
+2024-12-12 23:26:04,389 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: internal_messages
+2024-12-12 23:26:06,548 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: partial_history
+2024-12-12 23:26:06,549 DEBUG   SenderThread:49154 [sender.py:send():380] send: history
+2024-12-12 23:26:06,549 DEBUG   SenderThread:49154 [sender.py:send_request():407] send_request: summary_record
+2024-12-12 23:26:06,552 INFO    SenderThread:49154 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2024-12-12 23:26:07,392 INFO    Thread-12 :49154 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/disi/Prompt2Guard/wandb/run-20241212_232348-9ta5ksbx/files/wandb-summary.json
+2024-12-12 23:26:08,393 INFO    Thread-12 :49154 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/disi/Prompt2Guard/wandb/run-20241212_232348-9ta5ksbx/files/output.log
+2024-12-12 23:26:09,552 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: status_report
+2024-12-12 23:26:14,553 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: status_report
+2024-12-12 23:26:19,382 DEBUG   SenderThread:49154 [sender.py:send():380] send: stats
+2024-12-12 23:26:19,383 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: stop_status
+2024-12-12 23:26:19,383 DEBUG   SenderThread:49154 [sender.py:send_request():407] send_request: stop_status
+2024-12-12 23:26:19,389 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: internal_messages
+2024-12-12 23:26:19,607 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: status_report
+2024-12-12 23:26:22,301 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: partial_history
+2024-12-12 23:26:22,302 DEBUG   SenderThread:49154 [sender.py:send():380] send: history
+2024-12-12 23:26:22,303 DEBUG   SenderThread:49154 [sender.py:send_request():407] send_request: summary_record
+2024-12-12 23:26:22,303 INFO    SenderThread:49154 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2024-12-12 23:26:22,397 INFO    Thread-12 :49154 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/disi/Prompt2Guard/wandb/run-20241212_232348-9ta5ksbx/files/wandb-summary.json
+2024-12-12 23:26:24,397 INFO    Thread-12 :49154 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/disi/Prompt2Guard/wandb/run-20241212_232348-9ta5ksbx/files/output.log
+2024-12-12 23:26:25,304 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: status_report
+2024-12-12 23:26:27,148 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: partial_history
+2024-12-12 23:26:27,149 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: partial_history
+2024-12-12 23:26:27,150 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: partial_history
+2024-12-12 23:26:27,150 DEBUG   SenderThread:49154 [sender.py:send():380] send: history
+2024-12-12 23:26:27,152 DEBUG   SenderThread:49154 [sender.py:send_request():407] send_request: summary_record
+2024-12-12 23:26:27,153 INFO    SenderThread:49154 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2024-12-12 23:26:27,153 DEBUG   SenderThread:49154 [sender.py:send():380] send: history
+2024-12-12 23:26:27,153 DEBUG   SenderThread:49154 [sender.py:send_request():407] send_request: summary_record
+2024-12-12 23:26:27,153 INFO    SenderThread:49154 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2024-12-12 23:26:27,154 DEBUG   SenderThread:49154 [sender.py:send():380] send: history
+2024-12-12 23:26:27,154 DEBUG   SenderThread:49154 [sender.py:send_request():407] send_request: summary_record
+2024-12-12 23:26:27,154 INFO    SenderThread:49154 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2024-12-12 23:26:27,254 DEBUG   SenderThread:49154 [sender.py:send():380] send: exit
+2024-12-12 23:26:27,254 INFO    SenderThread:49154 [sender.py:send_exit():585] handling exit code: 1
+2024-12-12 23:26:27,254 INFO    SenderThread:49154 [sender.py:send_exit():587] handling runtime: 157
+2024-12-12 23:26:27,254 INFO    SenderThread:49154 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2024-12-12 23:26:27,255 INFO    SenderThread:49154 [sender.py:send_exit():593] send defer
+2024-12-12 23:26:27,255 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: defer
+2024-12-12 23:26:27,255 INFO    HandlerThread:49154 [handler.py:handle_request_defer():172] handle defer: 0
+2024-12-12 23:26:27,255 DEBUG   SenderThread:49154 [sender.py:send_request():407] send_request: defer
+2024-12-12 23:26:27,255 INFO    SenderThread:49154 [sender.py:send_request_defer():609] handle sender defer: 0
+2024-12-12 23:26:27,255 INFO    SenderThread:49154 [sender.py:transition_state():613] send defer: 1
+2024-12-12 23:26:27,255 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: defer
+2024-12-12 23:26:27,255 INFO    HandlerThread:49154 [handler.py:handle_request_defer():172] handle defer: 1
+2024-12-12 23:26:27,256 DEBUG   SenderThread:49154 [sender.py:send_request():407] send_request: defer
+2024-12-12 23:26:27,256 INFO    SenderThread:49154 [sender.py:send_request_defer():609] handle sender defer: 1
+2024-12-12 23:26:27,256 INFO    SenderThread:49154 [sender.py:transition_state():613] send defer: 2
+2024-12-12 23:26:27,256 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: defer
+2024-12-12 23:26:27,256 INFO    HandlerThread:49154 [handler.py:handle_request_defer():172] handle defer: 2
+2024-12-12 23:26:27,256 INFO    HandlerThread:49154 [system_monitor.py:finish():203] Stopping system monitor
+2024-12-12 23:26:27,257 INFO    HandlerThread:49154 [interfaces.py:finish():202] Joined cpu monitor
+2024-12-12 23:26:27,257 DEBUG   SystemMonitor:49154 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-12-12 23:26:27,257 INFO    HandlerThread:49154 [interfaces.py:finish():202] Joined disk monitor
+2024-12-12 23:26:27,257 DEBUG   SystemMonitor:49154 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-12-12 23:26:27,289 INFO    HandlerThread:49154 [interfaces.py:finish():202] Joined gpu monitor
+2024-12-12 23:26:27,289 INFO    HandlerThread:49154 [interfaces.py:finish():202] Joined memory monitor
+2024-12-12 23:26:27,289 INFO    HandlerThread:49154 [interfaces.py:finish():202] Joined network monitor
+2024-12-12 23:26:27,289 DEBUG   SenderThread:49154 [sender.py:send_request():407] send_request: defer
+2024-12-12 23:26:27,289 INFO    SenderThread:49154 [sender.py:send_request_defer():609] handle sender defer: 2
+2024-12-12 23:26:27,289 INFO    SenderThread:49154 [sender.py:transition_state():613] send defer: 3
+2024-12-12 23:26:27,290 DEBUG   SenderThread:49154 [sender.py:send():380] send: stats
+2024-12-12 23:26:27,290 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: defer
+2024-12-12 23:26:27,290 INFO    HandlerThread:49154 [handler.py:handle_request_defer():172] handle defer: 3
+2024-12-12 23:26:27,290 DEBUG   SenderThread:49154 [sender.py:send_request():407] send_request: defer
+2024-12-12 23:26:27,290 INFO    SenderThread:49154 [sender.py:send_request_defer():609] handle sender defer: 3
+2024-12-12 23:26:27,290 INFO    SenderThread:49154 [sender.py:transition_state():613] send defer: 4
+2024-12-12 23:26:27,290 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: defer
+2024-12-12 23:26:27,291 INFO    HandlerThread:49154 [handler.py:handle_request_defer():172] handle defer: 4
+2024-12-12 23:26:27,291 DEBUG   SenderThread:49154 [sender.py:send_request():407] send_request: defer
+2024-12-12 23:26:27,291 INFO    SenderThread:49154 [sender.py:send_request_defer():609] handle sender defer: 4
+2024-12-12 23:26:27,291 INFO    SenderThread:49154 [sender.py:transition_state():613] send defer: 5
+2024-12-12 23:26:27,291 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: defer
+2024-12-12 23:26:27,291 INFO    HandlerThread:49154 [handler.py:handle_request_defer():172] handle defer: 5
+2024-12-12 23:26:27,291 DEBUG   SenderThread:49154 [sender.py:send():380] send: summary
+2024-12-12 23:26:27,292 INFO    SenderThread:49154 [sender.py:_save_file():1380] saving file wandb-summary.json with policy end
+2024-12-12 23:26:27,292 DEBUG   SenderThread:49154 [sender.py:send_request():407] send_request: defer
+2024-12-12 23:26:27,292 INFO    SenderThread:49154 [sender.py:send_request_defer():609] handle sender defer: 5
+2024-12-12 23:26:27,292 INFO    SenderThread:49154 [sender.py:transition_state():613] send defer: 6
+2024-12-12 23:26:27,292 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: defer
+2024-12-12 23:26:27,292 INFO    HandlerThread:49154 [handler.py:handle_request_defer():172] handle defer: 6
+2024-12-12 23:26:27,292 DEBUG   SenderThread:49154 [sender.py:send_request():407] send_request: defer
+2024-12-12 23:26:27,292 INFO    SenderThread:49154 [sender.py:send_request_defer():609] handle sender defer: 6
+2024-12-12 23:26:27,293 INFO    SenderThread:49154 [sender.py:transition_state():613] send defer: 7
+2024-12-12 23:26:27,293 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: status_report
+2024-12-12 23:26:27,293 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: defer
+2024-12-12 23:26:27,293 INFO    HandlerThread:49154 [handler.py:handle_request_defer():172] handle defer: 7
+2024-12-12 23:26:27,293 DEBUG   SenderThread:49154 [sender.py:send_request():407] send_request: defer
+2024-12-12 23:26:27,293 INFO    SenderThread:49154 [sender.py:send_request_defer():609] handle sender defer: 7
+2024-12-12 23:26:27,398 INFO    Thread-12 :49154 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/disi/Prompt2Guard/wandb/run-20241212_232348-9ta5ksbx/files/wandb-summary.json
+2024-12-12 23:26:28,234 INFO    SenderThread:49154 [sender.py:transition_state():613] send defer: 8
+2024-12-12 23:26:28,234 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: defer
+2024-12-12 23:26:28,235 INFO    HandlerThread:49154 [handler.py:handle_request_defer():172] handle defer: 8
+2024-12-12 23:26:28,235 DEBUG   SenderThread:49154 [sender.py:send_request():407] send_request: defer
+2024-12-12 23:26:28,235 INFO    SenderThread:49154 [sender.py:send_request_defer():609] handle sender defer: 8
+2024-12-12 23:26:28,235 INFO    SenderThread:49154 [job_builder.py:build():298] Attempting to build job artifact
+2024-12-12 23:26:28,236 INFO    SenderThread:49154 [job_builder.py:_get_source_type():428] is repo sourced job
+2024-12-12 23:26:28,253 INFO    SenderThread:49154 [job_builder.py:build():404] adding wandb-job metadata file
+2024-12-12 23:26:28,254 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: poll_exit
+2024-12-12 23:26:28,264 INFO    SenderThread:49154 [sender.py:transition_state():613] send defer: 9
+2024-12-12 23:26:28,264 DEBUG   SenderThread:49154 [sender.py:send_request():407] send_request: poll_exit
+2024-12-12 23:26:28,264 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: defer
+2024-12-12 23:26:28,265 DEBUG   SenderThread:49154 [sender.py:send():380] send: artifact
+2024-12-12 23:26:28,265 INFO    HandlerThread:49154 [handler.py:handle_request_defer():172] handle defer: 9
+2024-12-12 23:26:28,399 INFO    Thread-12 :49154 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/disi/Prompt2Guard/wandb/run-20241212_232348-9ta5ksbx/files/output.log
+2024-12-12 23:26:29,255 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: poll_exit
+2024-12-12 23:26:33,695 INFO    wandb-upload_0:49154 [upload_job.py:push():86] Skipped uploading /home/disi/.local/share/wandb/artifacts/staging/tmp1t4yah00
+2024-12-12 23:26:33,890 INFO    wandb-upload_1:49154 [upload_job.py:push():89] Uploaded file /home/disi/.local/share/wandb/artifacts/staging/tmpdsij4hsf
+2024-12-12 23:26:34,257 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: keepalive
+2024-12-12 23:26:34,839 INFO    SenderThread:49154 [sender.py:send_artifact():1458] sent artifact job-https___github.com_laitifranz_Prompt2Guard.git_src_train.py - {'id': 'QXJ0aWZhY3Q6MTM2OTA0NTI4MA==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjUwMjUyMDI1Ng==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MTM2OTAzMzU0Mw==', 'versionIndex': 3}}}
+2024-12-12 23:26:34,839 DEBUG   SenderThread:49154 [sender.py:send_request():407] send_request: defer
+2024-12-12 23:26:34,839 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: status_report
+2024-12-12 23:26:34,839 INFO    SenderThread:49154 [sender.py:send_request_defer():609] handle sender defer: 9
+2024-12-12 23:26:34,840 INFO    SenderThread:49154 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-12-12 23:26:35,400 INFO    SenderThread:49154 [dir_watcher.py:finish():388] scan: /home/disi/Prompt2Guard/wandb/run-20241212_232348-9ta5ksbx/files
+2024-12-12 23:26:35,401 INFO    SenderThread:49154 [dir_watcher.py:finish():402] scan save: /home/disi/Prompt2Guard/wandb/run-20241212_232348-9ta5ksbx/files/config.yaml config.yaml
+2024-12-12 23:26:35,401 INFO    SenderThread:49154 [dir_watcher.py:finish():402] scan save: /home/disi/Prompt2Guard/wandb/run-20241212_232348-9ta5ksbx/files/wandb-metadata.json wandb-metadata.json
+2024-12-12 23:26:35,403 INFO    SenderThread:49154 [dir_watcher.py:finish():402] scan save: /home/disi/Prompt2Guard/wandb/run-20241212_232348-9ta5ksbx/files/requirements.txt requirements.txt
+2024-12-12 23:26:35,403 INFO    SenderThread:49154 [dir_watcher.py:finish():402] scan save: /home/disi/Prompt2Guard/wandb/run-20241212_232348-9ta5ksbx/files/output.log output.log
+2024-12-12 23:26:35,404 INFO    SenderThread:49154 [dir_watcher.py:finish():402] scan save: /home/disi/Prompt2Guard/wandb/run-20241212_232348-9ta5ksbx/files/wandb-summary.json wandb-summary.json
+2024-12-12 23:26:35,405 INFO    SenderThread:49154 [sender.py:transition_state():613] send defer: 10
+2024-12-12 23:26:35,408 DEBUG   SenderThread:49154 [sender.py:send_request():407] send_request: poll_exit
+2024-12-12 23:26:35,410 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: defer
+2024-12-12 23:26:35,410 INFO    HandlerThread:49154 [handler.py:handle_request_defer():172] handle defer: 10
+2024-12-12 23:26:35,411 DEBUG   SenderThread:49154 [sender.py:send_request():407] send_request: defer
+2024-12-12 23:26:35,411 INFO    SenderThread:49154 [sender.py:send_request_defer():609] handle sender defer: 10
+2024-12-12 23:26:35,411 INFO    SenderThread:49154 [file_pusher.py:finish():175] shutting down file pusher
+2024-12-12 23:26:35,722 INFO    wandb-upload_0:49154 [upload_job.py:push():131] Uploaded file /home/disi/Prompt2Guard/wandb/run-20241212_232348-9ta5ksbx/files/config.yaml
+2024-12-12 23:26:35,738 INFO    wandb-upload_1:49154 [upload_job.py:push():131] Uploaded file /home/disi/Prompt2Guard/wandb/run-20241212_232348-9ta5ksbx/files/requirements.txt
+2024-12-12 23:26:35,757 INFO    wandb-upload_2:49154 [upload_job.py:push():131] Uploaded file /home/disi/Prompt2Guard/wandb/run-20241212_232348-9ta5ksbx/files/output.log
+2024-12-12 23:26:35,759 INFO    wandb-upload_3:49154 [upload_job.py:push():131] Uploaded file /home/disi/Prompt2Guard/wandb/run-20241212_232348-9ta5ksbx/files/wandb-summary.json
+2024-12-12 23:26:35,959 INFO    Thread-11 :49154 [sender.py:transition_state():613] send defer: 11
+2024-12-12 23:26:35,959 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: defer
+2024-12-12 23:26:35,959 INFO    HandlerThread:49154 [handler.py:handle_request_defer():172] handle defer: 11
+2024-12-12 23:26:35,960 DEBUG   SenderThread:49154 [sender.py:send_request():407] send_request: defer
+2024-12-12 23:26:35,960 INFO    SenderThread:49154 [sender.py:send_request_defer():609] handle sender defer: 11
+2024-12-12 23:26:35,960 INFO    SenderThread:49154 [file_pusher.py:join():181] waiting for file pusher
+2024-12-12 23:26:35,960 INFO    SenderThread:49154 [sender.py:transition_state():613] send defer: 12
+2024-12-12 23:26:35,960 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: defer
+2024-12-12 23:26:35,960 INFO    HandlerThread:49154 [handler.py:handle_request_defer():172] handle defer: 12
+2024-12-12 23:26:35,961 DEBUG   SenderThread:49154 [sender.py:send_request():407] send_request: defer
+2024-12-12 23:26:35,961 INFO    SenderThread:49154 [sender.py:send_request_defer():609] handle sender defer: 12
+2024-12-12 23:26:35,961 INFO    SenderThread:49154 [file_stream.py:finish():595] file stream finish called
+2024-12-12 23:26:36,086 INFO    SenderThread:49154 [file_stream.py:finish():599] file stream finish is done
+2024-12-12 23:26:36,087 INFO    SenderThread:49154 [sender.py:transition_state():613] send defer: 13
+2024-12-12 23:26:36,087 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: defer
+2024-12-12 23:26:36,087 INFO    HandlerThread:49154 [handler.py:handle_request_defer():172] handle defer: 13
+2024-12-12 23:26:36,087 DEBUG   SenderThread:49154 [sender.py:send_request():407] send_request: defer
+2024-12-12 23:26:36,087 INFO    SenderThread:49154 [sender.py:send_request_defer():609] handle sender defer: 13
+2024-12-12 23:26:36,087 INFO    SenderThread:49154 [sender.py:transition_state():613] send defer: 14
+2024-12-12 23:26:36,088 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: defer
+2024-12-12 23:26:36,088 DEBUG   SenderThread:49154 [sender.py:send():380] send: final
+2024-12-12 23:26:36,088 INFO    HandlerThread:49154 [handler.py:handle_request_defer():172] handle defer: 14
+2024-12-12 23:26:36,088 DEBUG   SenderThread:49154 [sender.py:send():380] send: footer
+2024-12-12 23:26:36,088 DEBUG   SenderThread:49154 [sender.py:send_request():407] send_request: defer
+2024-12-12 23:26:36,088 INFO    SenderThread:49154 [sender.py:send_request_defer():609] handle sender defer: 14
+2024-12-12 23:26:36,089 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: poll_exit
+2024-12-12 23:26:36,089 DEBUG   SenderThread:49154 [sender.py:send_request():407] send_request: poll_exit
+2024-12-12 23:26:36,089 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: server_info
+2024-12-12 23:26:36,090 DEBUG   SenderThread:49154 [sender.py:send_request():407] send_request: server_info
+2024-12-12 23:26:36,092 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: get_summary
+2024-12-12 23:26:36,092 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: sampled_history
+2024-12-12 23:26:36,095 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: internal_messages
+2024-12-12 23:26:36,095 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: job_info
+2024-12-12 23:26:36,213 DEBUG   SenderThread:49154 [sender.py:send_request():407] send_request: job_info
+2024-12-12 23:26:36,214 INFO    MainThread:49154 [wandb_run.py:_footer_history_summary_info():3760] rendering history
+2024-12-12 23:26:36,214 INFO    MainThread:49154 [wandb_run.py:_footer_history_summary_info():3792] rendering summary
+2024-12-12 23:26:36,215 INFO    MainThread:49154 [wandb_run.py:_footer_sync_info():3719] logging synced files
+2024-12-12 23:26:36,215 DEBUG   HandlerThread:49154 [handler.py:handle_request():146] handle_request: shutdown
+2024-12-12 23:26:36,215 INFO    HandlerThread:49154 [handler.py:finish():866] shutting down handler
+2024-12-12 23:26:37,096 INFO    WriterThread:49154 [datastore.py:close():294] close: /home/disi/Prompt2Guard/wandb/run-20241212_232348-9ta5ksbx/run-9ta5ksbx.wandb
+2024-12-12 23:26:37,214 INFO    SenderThread:49154 [sender.py:finish():1536] shutting down sender
+2024-12-12 23:26:37,214 INFO    SenderThread:49154 [file_pusher.py:finish():175] shutting down file pusher
+2024-12-12 23:26:37,214 INFO    SenderThread:49154 [file_pusher.py:join():181] waiting for file pusher

@@ -1,0 +1,18 @@
+> /home/disi/Prompt2Guard/src/trainer.py(53)train()
+-> for task in range(data_manager.nb_tasks):
+5
+{'batch_size': 2, 'batch_size_eval': 32, 'epochs': 8, 'warmup_epoch': 1, 'init_lr': 0.01, 'lrate': 0.01, 'label_smoothing': 0.1, 'topk_classes': 5, 'K': 7, 'enable_prev_prompt': False, 'ensembling': [False, False, True, False], 'precision': 'fp16', 'dataset': 'cddb', 'task_name': ['biggan', 'whichfaceisreal', 'san'], 'data_path': '/home/disi/CDDBdataset/CDDB/', 'multiclass': [0, 0, 0], 'class_order': [0, 1, 2, 3, 4, 5, 6, 7, 8, 9], 'memory_size': 0, 'memory_per_class': 0, 'fixed_memory': True, 'shuffle': False, 'init_cls': 2, 'increment': 2, 'embd_dim': 768, 'torch_seed': 2, 'seed': [1993], 'EPSILON': 1e-08, 'init_milestones': [20, 30, 40], 'init_lr_decay': 0.1, 'init_weight_decay': 0.0005, 'milestones': [20, 30], 'lrate_decay': 0.1, 'weight_decay': 0.0002, 'num_workers': 6, 'config': './configs/cddb_training.json', 'wandb': True, 'run_name': 'testToTrash', 'device': device(type='cuda'), 'filename': 'logs/testToTrash/2024-12-12-23:16:25/task'}
+Traceback (most recent call last):
+  File "/home/disi/Prompt2Guard/src/train.py", line 91, in <module>
+    main()
+  File "/home/disi/Prompt2Guard/src/train.py", line 12, in main
+    train(param)
+  File "/home/disi/Prompt2Guard/src/trainer.py", line 53, in train
+    for task in range(nb_tasks):
+  File "/home/disi/Prompt2Guard/src/trainer.py", line 53, in train
+    for task in range(nb_tasks):
+  File "/usr/lib/python3.9/bdb.py", line 88, in trace_dispatch
+    return self.dispatch_line(frame)
+  File "/usr/lib/python3.9/bdb.py", line 113, in dispatch_line
+    if self.quitting: raise BdbQuit
+bdb.BdbQuit

@@ -1,0 +1,1 @@
+{"task_0/train_loss": 0.6328757128864527, "task_0/train_acc": 67.88, "task_0/test_acc": 78.5, "epoch": 1, "_timestamp": 1734053516.2613723, "_runtime": 41.07054924964905, "_step": 0, "_wandb": {"runtime": 48}}
