@@ -106,12 +106,13 @@ After you have run it, a new pickle file will be generate, next you have to chan
 
 #### Wandb
 If you want to use a **wandb account** you have to modify the data in the file `data_manager.py` at line 72 and line 306 for the name of the run.
+Then run the training or the inference with the `--wandb` flag (same as the original P2G)
 
 #### Experiments
 If you want to try different combination of hyperparameters, you have to change the configuration in the `cddb_training.json`.
 For example, we suggest you to modify: the number of epochs, the order of the task (parameters: task_name and multiclass) or to create a new task made as an union of differents and compare the results .
 
-## 5. References
+## 4. References
 1. P2G
 2. Paper diffusion (dataset dei DM)
 3. CIL paper 
