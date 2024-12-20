@@ -9,6 +9,16 @@ We choose to adopt [Prompt2Guard](https://github.com/laitifranz/Prompt2Guard), w
 
 ## 2. Setup
 
+Create the environment with the requirements.txt file.
+
+Change the path of the dataset and the parameter num_workers in the cddb_inference.json/cddb_training.json file.
+
+If you want to add classes in the training, you have to modify the zeroshot_classprediction.py file at line 91 (add the name of the class that must be in the same directory of the other) and then run it. Remeber that if you generate a new pickle file you have to change the path in the data_manager.py file at line 174 with your new file.
+
+If you want to use a wandb account you have to modify the data in the file data_manager at line 72 (and line 306 for the name of the run).
+
+If you want to try some new experiments, you have to change the configuration in the cddb_training.json. In particular we suggest you to change: the number of epochs, the order of the task (parameters: task_name and multiclass).
+
 ## 3. Examples and Experiments
 
 ## 4. Structure
