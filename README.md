@@ -13,7 +13,7 @@ We choose to adopt [Prompt2Guard](https://github.com/laitifranz/Prompt2Guard), w
   
     `$ pip install -r requirements.txt`
 
-2. **Dataset:** Download the dataset (CDDBdataset) and extract it, you should see a structure like: 
+2. **Dataset:** Download the [dataset](https://drive.google.com/file/d/1DyDZxpGHh1MkccXvbJtNJ2gyvjiIqKHe/view?usp=drive_link) (CDDBdataset) and extract it, you should see a structure like: 
 
     ```
     CDDBdataset/
@@ -113,6 +113,6 @@ If you want to try different combination of hyperparameters, you have to change 
 For example, we suggest you to modify: the number of epochs, the order of the task (parameters: task_name and multiclass) or to create a new task made as an union of differents and compare the results .
 
 ## 4. References
-1. P2G
-2. Paper diffusion (dataset dei DM)
-3. CIL paper 
+1. The model we use: [Prompt2Guard](https://arxiv.org/pdf/2407.21554)
+2. The dataset with images generate with diffusion models: [On the detection if synthetic images generatedby diffusion models](https://arxiv.org/pdf/2211.00680)
+3. The CDDB dataset: [A Continual Deepfake Detection Benchmark: Dataset, Methods, and Essentials](https://arxiv.org/pdf/2205.05467)
